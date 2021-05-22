@@ -9,9 +9,9 @@ const Linktree = () => {
   return (
     <div className="main-container">
       <div className="container">
-        {/* <div id="title">
+        <div id="title">
           <img id="profilePic" src={profilePic} alt="" />
-        </div> */}
+        </div>
         <div id="links">
           <button>
             <img src={youtube} alt="" /> Youtube
