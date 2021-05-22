@@ -9,29 +9,29 @@ const Linktree = () => {
   return (
     <div className="main-container">
       <div className="container">
-        <div id="title">
+        {/* <div id="title">
           <img id="profilePic" src={profilePic} alt="" />
-        </div>
+        </div> */}
         <div id="links">
           <button>
-            <img src={youtube} alt="" /> <h1>Youtube</h1>
+            <img src={youtube} alt="" /> Youtube
             <div></div>
           </button>
           <button>
             <img src={spotify} alt="" />
-            <h1>Spotify</h1> <div></div>
+            Spotify <div></div>
           </button>
           <button>
             <img src={appleMusic} alt="" />
-            <h1>Apple Music</h1> <div></div>
+            Apple Music <div></div>
           </button>
           <button>
             <img src={bandcamp} alt="" />
-            <h1>Bandcamp</h1> <div></div>
+            Bandcamp <div></div>
           </button>
           <button>
             <img src={soundcloud} alt="" />
-            <h1>Soundcloud</h1>
+            Soundcloud
             <div></div>
           </button>
         </div>
