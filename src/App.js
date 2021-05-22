@@ -1,10 +1,17 @@
 import "./App.css";
+import Linktree from "./containers/Linktree";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      Hello from <a href="https://www.lereacteur.io">Le Reacteur !</a>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/linktree">
+          <Linktree />
+        </Route>
+        <Route path="/"></Route>
+      </Switch>
+    </Router>
   );
 }
 
