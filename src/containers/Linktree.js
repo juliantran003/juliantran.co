@@ -1,4 +1,9 @@
 import profilePic from "../assets/img/profile-pic.JPG";
+import youtube from "../assets/img/youtube.png";
+import spotify from "../assets/img/spotify.png";
+import appleMusic from "../assets/img/appleMusic.png";
+import bandcamp from "../assets/img/bandcamp.png";
+import soundcloud from "../assets/img/soundcloud.png";
 
 const Linktree = () => {
   return (
@@ -9,23 +14,23 @@ const Linktree = () => {
         </div>
         <div id="links">
           <button>
-            <i id="youtube" class="fab fa-youtube"></i> <h1>Youtube</h1>{" "}
+            <img src={youtube} alt="" /> <h1>Youtube</h1>
             <div></div>
           </button>
           <button>
-            <i id="spotify" class="fab fa-spotify"></i>
+            <img src={spotify} alt="" />
             <h1>Spotify</h1> <div></div>
           </button>
           <button>
-            <i id="appleMusic" class="fas fa-music"></i>
+            <img src={appleMusic} alt="" />
             <h1>Apple Music</h1> <div></div>
           </button>
           <button>
-            <i id="bandcamp" class="fab fa-bandcamp"></i>
+            <img src={bandcamp} alt="" />
             <h1>Bandcamp</h1> <div></div>
           </button>
           <button>
-            <i id="soundcloud" class="fab fa-soundcloud"></i>
+            <img src={soundcloud} alt="" />
             <h1>Soundcloud</h1>
             <div></div>
           </button>
