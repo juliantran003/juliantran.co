@@ -1,27 +1,23 @@
 [
-    {
-        "title": "Youtube",
-        "icon": "",
-        "link": ""
-    },
+
     {
         "title": "Spotify",
-        "icon": "",
-        "link": ""
+  
+        "link": "https://open.spotify.com/artist/56WB4onpbv1NmX2XNzPp8Q"
     },
     {
         "title": "Apple Music",
-        "icon": "",
-        "link": ""
+  
+        "link": "https://music.apple.com/us/artist/julian-tran/1539405644"
     },
     {
         "title": "Bandcamp",
-        "icon": "",
-        "link": ""
+  
+        "link": "https://juliantran.bandcamp.com/"
     },
     {
         "title": "Soundcloud",
-        "icon": "",
-        "link": ""
+  
+        "link": "https://soundcloud.com/user-59317715"
     }
 ]

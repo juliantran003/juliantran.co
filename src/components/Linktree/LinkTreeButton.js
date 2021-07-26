@@ -1,8 +1,9 @@
-const LinkTreeButton = ({title,onClick, icon}) => {
-    return <button onClick={onClick} className="linktree_button">
-    <img src={icon} alt={icon} /> {title}
+const LinkTreeButton = ({ title, href, icon }) => {
+  return (
+    <a href={href} className="linktree_button">
+      {title}
+    </a>
+  );
+};
 
-  </button>
-}
-
-export default LinkTreeButton
+export default LinkTreeButton;
