@@ -7,6 +7,18 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.container_main_black {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../src/assets/img/background.JPG");
+  background-position:center;
+  background-repeat: repeat;
+  background-size: 180vh;
+  background-color:transparent;
+
+}
+
 /* LINKTREE */
 
 .linktree_container {
@@ -14,14 +26,37 @@ body {
   max-width: 500px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+ ;
 }
 
 .linktree_button {
   margin: 10px 5px 0px 5px;
-  padding: 10px 0;
+border-radius: 50%;
+padding: 2px;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+cursor: pointer;
+}
+
+
+.linktree_button img {
+  width: 5rem;
 }
 
 .linktree_video {
-  margin-top: 10px;
-  padding: 0 6px;
+  margin-top: 70px;
+  padding: 0 0px;
+  margin-bottom: 70px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.linktree_container_buttons {
+  display: flex;
+  justify-content:space-between;
+  width: 80%;
+  margin-bottom: 50px;
 }
