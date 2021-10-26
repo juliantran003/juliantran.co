@@ -9,7 +9,7 @@ const Menu = () => {
         <Link to="/discography">discography </Link>
         <Link>work</Link>
         <Link>media</Link>
-        <Link>contact</Link>
+        <Link to="/contact">contact</Link>
       </div>
 
       <div className="menu__socials">
