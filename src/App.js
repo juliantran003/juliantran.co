@@ -1,14 +1,20 @@
 import "./App.css";
-import Linktree from "./containers/Linktree";
-import Home from "./containers/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+// Containers
+import Home from "./containers/Home";
+import Discography from "./containers/Discography";
+
+// Components
+import Menu from "./components/Menu";
 
 function App() {
   return (
     <Router>
+      <Menu />
       <Switch>
-        <Route path="/linktree">
-          <Linktree />
+        <Route path="/discography">
+          <Discography />
         </Route>
         <Route path="/">
           <Home />
