@@ -1,5 +1,5 @@
 // Packages
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 
 // Components
@@ -29,6 +29,7 @@ const Discography = () => {
     };
     fetchData();
   }, []);
+
   return (
     <div className="container">
       {modal && <AlbumModal setModal={setModal} id={modal} />}
@@ -36,9 +37,9 @@ const Discography = () => {
         <Loader />
       ) : (
         <div className="discography">
-          {albumData.map((album) => {
+          {albumData.map((album, index) => {
             return (
-              <div className="discography__album">
+              <div className="discography__album" id={index}>
                 <div>
                   <div
                     className="discography__hover"
@@ -58,6 +59,16 @@ const Discography = () => {
                 >
                   more info
                 </button>
+                {/* {index + 1 < albumData.length && (
+                  <i
+                    class="fas fa-caret-down discography__previous"
+                    onClick={() =>
+                      document
+                        .getElementById(index + 1)
+                        .scrollIntoView({ behavior: "smooth" })
+                    }
+                  ></i>
+                )} */}
               </div>
             );
           })}

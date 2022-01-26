@@ -13,11 +13,10 @@ const About = () => {
     <div className="container">
       <div className="about">
         <p>
-          My name is Julian Tran. I am {getAge()} years old. I write, produce,
-          mix & sometimes perform music. If you wish to know more about my
-          projects or myself, simply navigate through my website. If some
-          questions are still left unanswered, you're most welcome to contact
-          me.
+          My name is Julian Tran. I am {getAge()} years old. If you wish to know
+          more about my projects or myself, simply navigate through my website.
+          If some questions are still left unanswered, you're most welcome to
+          contact me.
         </p>
       </div>
     </div>
