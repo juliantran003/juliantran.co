@@ -97,7 +97,7 @@ export default function Fantasy() {
           return option.send === selected ? (
             <div className="musicPage_info">
               <div className="musicPage_cover">
-                <Image src={option.img} fill />
+                {/* <Image src={option.img} fill /> */}
               </div>
               <div className="musicPage_info_tracks">
                 {option.tracklist.map((track) => {

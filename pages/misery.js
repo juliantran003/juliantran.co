@@ -58,7 +58,7 @@ export default function Anotherday() {
 
       <div className="musicPage_info">
         <div className="musicPage_cover">
-          <Image src={cover} fill />
+          {/* <Image src={cover} fill /> */}
         </div>
         <div className="musicPage_info_tracks">
           {tracklist.map((track) => {
