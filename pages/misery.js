@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Metadata from "../components/metadata.js";
 
 // IMG
 import cover from "../public/img/misery.png";
@@ -45,6 +46,12 @@ export default function Anotherday() {
 
   return (
     <div className="musicPage">
+      <Metadata
+        title="Julian Tran - Misery"
+        img="/img/misery.png"
+        description={`Misery || Album written, performed and produced by Julian Tran`}
+        tags="Julian, Tran, music, Misery, album, producer, songwriting, artist"
+      />
       <style jsx global>
         {`
           body {

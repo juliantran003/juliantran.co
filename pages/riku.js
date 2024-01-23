@@ -16,6 +16,7 @@ export default function Riku() {
       previous="/anotherday"
       link="https://tombrett.co/Riku-s-Valley"
       imgLink="/img/riku.gif"
+      tags="Thomas,Brett, Riku's, Riku, Valley shortfilm, film, score, music, soundtrack, Julian, Tran, composer, director, cinema, artist, portfolio"
     />
   );
 }

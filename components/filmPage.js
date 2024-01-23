@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import Metadata from "./metadata";
 
 // IMG
 import arrowLeft from "../public/img/arrow_left.png";
@@ -17,11 +18,18 @@ export default function FilmPage({
   previous,
   link,
   imgLink,
+  tags,
 }) {
   const router = useRouter();
 
   return (
     <>
+      <Metadata
+        title={title}
+        img={imgLink}
+        description={`Score by Julian Tran - Directed by ${director}`}
+        tags={tags}
+      />
       <style jsx global>
         {`
           body {

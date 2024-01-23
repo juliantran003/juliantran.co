@@ -16,6 +16,7 @@ export default function Coast() {
       previous="none"
       link="https://zeyuanren.com/Coast-to-Coast-Preamble"
       imgLink="img/coast.gif"
+      tags="Zeyuan, Ren, Coast, shortfilm, film, score, music, soundtrack, Julian, Tran, composer, director, cinema, artist, portfolio"
     />
   );
 }

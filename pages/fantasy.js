@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Metadata from "../components/metadata.js";
 
 // IMG
 import fu1 from "../public/img/fu1.png";
@@ -80,6 +81,12 @@ export default function Fantasy() {
   ];
   return (
     <>
+      <Metadata
+        title="Julian Tran - Fantasy Unlimited : Part I - IV"
+        img="/img/fu4.png"
+        description={`Fantasy Unlimited : Part I - IV || Album written, performed and produced by Julian Tran`}
+        tags="Julian, Tran, music, Fantasy, Unlimited, album, producer, songwriting, artist"
+      />
       <div className="musicPage_background"></div>
       <div className="musicPage">
         <style jsx global>

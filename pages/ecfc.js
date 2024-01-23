@@ -16,6 +16,7 @@ export default function ECFC() {
       previous="/coast"
       link="https://lilanyang.studio/ecfc.html"
       imgLink="/img/ecfc-gif.gif"
+      tags="Lilan, Yang, Everything,Comes,Full,Circle, shortfilm, film, score, music, soundtrack, Julian, Tran, composer, director, cinema, artist, portfolio"
     />
   );
 }
