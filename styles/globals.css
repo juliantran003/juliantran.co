@@ -564,7 +564,7 @@ body {
 .musicPage_cover {
   position: relative;
   width: 200px;
-  height: 180px;
+  height: 200px;
   margin-right: 40px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.601);
 }
@@ -859,7 +859,7 @@ body {
     font-size: 34px;
   }
   .musicPage_cover {
-    width: 122px;
+    width: 110px;
     height: 110px;
   }
   .musicPage_info_tracks {

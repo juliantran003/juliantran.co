@@ -24,7 +24,7 @@ export default function Anotherday() {
 
       <div className="musicPage_info">
         <div className="musicPage_cover">
-          <Image src={cover} fill />
+          <Image src={cover} fill quality={70} />
         </div>
         <div className="musicPage_info_tracks">
           <p>
