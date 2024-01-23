@@ -30,7 +30,7 @@ export default function FilmPage({
         `}
       </style>
       <div className="filmPage_background">
-        {/* <Image src={img} fill style={{ objectFit: "cover" }} /> */}
+        <Image src={img} fill style={{ objectFit: "cover" }} />
         <div className="filmPage_info">
           {/* <h2 className="filmPage_type">{type}</h2> */}
           {previous === "none" ? (
