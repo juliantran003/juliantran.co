@@ -506,12 +506,6 @@ body {
 
 /* Music Page */
 
-.musicPage_background {
-  position: fixed;
-  width: 100vw;
-  height: 100vw;
-}
-
 .musicPage {
   max-width: 1440px;
   margin: 0 auto;
