@@ -1,0 +1,925 @@
+:root {
+  --main-background-color: #d9d9d9;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Aqala";
+  src: url("../public/fonts/Aqala Display Free.ttf");
+}
+
+@font-face {
+  font-family: "Kawingan";
+  src: url("../public/fonts/Kawingan-DEMO.otf");
+}
+@font-face {
+  font-family: "Atreyu";
+  src: url("../public/fonts/Atreyu.otf");
+}
+
+/* HEADER */
+
+.header_container {
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  z-index: 1;
+}
+
+.header {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 20px 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_logo {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  cursor: pointer;
+}
+
+.header_button {
+  font-size: 14px;
+  opacity: 0.6;
+  font-family: "Atreyu";
+  background: none;
+  color: black;
+  border: solid black 1px;
+  padding: 8px 10px 5px 10px;
+
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: none;
+  animation: fadeIn 0.3s ease-in-out;
+  z-index: 1;
+}
+.header_button:hover {
+  opacity: 0.6;
+  font-family: "Atreyu";
+  background: black;
+  border: solid rgba(0, 0, 0, 0.897) 1px;
+  padding: 8px 10px 5px 10px;
+
+  cursor: pointer;
+  color: var(--main-background-color);
+}
+.mobile_header_button {
+  display: none;
+  font-size: 14px;
+  opacity: 0.6;
+  font-family: "Atreyu";
+  background: none;
+  color: black;
+  border: solid black 1px;
+  padding: 8px 10px 5px 10px;
+
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: none;
+  animation: fadeIn 0.3s ease-in-out;
+  z-index: 1;
+}
+.mobile_header_button:hover {
+  opacity: 0.6;
+  font-family: "Atreyu";
+  background: black;
+  border: solid rgba(0, 0, 0, 0.897) 1px;
+  padding: 8px 10px 5px 10px;
+
+  cursor: pointer;
+  color: var(--main-background-color);
+}
+
+.header_spacer {
+  width: 30%;
+}
+
+.header_controls {
+  opacity: 0.8;
+  min-width: 100px;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  cursor: pointer;
+}
+.header_player_text {
+  font-family: "Kawingan";
+  opacity: 0.6;
+
+  white-space: nowrap;
+
+  font-size: 14px;
+  transform: translateX(0%);
+
+  animation: scroll 10s linear infinite, fadeIn 0.3s ease-in-out;
+}
+.header_player_text span {
+  margin: 0 10px;
+}
+.header_player_container {
+  overflow: hidden;
+  min-width: 30%;
+  /* width: 432px; */
+  width: 30%;
+}
+
+.header_socials {
+  display: flex;
+  align-items: center;
+  margin-right: 1%;
+}
+
+.header_socials > div {
+  width: 20px;
+  height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+/* Header White */
+
+.headerWhite {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerWhite_logo {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  cursor: pointer;
+}
+
+.headerWhite_button {
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: none;
+  opacity: 0.9;
+  font-family: "Atreyu";
+  background: none;
+  border: solid var(--main-background-color) 1px;
+  padding: 8px 10px 5px 10px;
+
+  cursor: pointer;
+  color: var(--main-background-color);
+  animation: fadeInWhite 0.3s ease-in-out;
+}
+.headerWhite_button:hover {
+  opacity: 0.9;
+  font-family: "Atreyu";
+  background: var(--main-background-color);
+  border: solid var(--main-background-color) 1px;
+  padding: 8px 10px 5px 10px;
+
+  cursor: pointer;
+  color: black;
+}
+.mobile_headerWhite_button {
+  display: none;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: none;
+  opacity: 0.9;
+  font-family: "Atreyu";
+  background: none;
+  border: solid var(--main-background-color) 1px;
+  padding: 8px 10px 5px 10px;
+
+  cursor: pointer;
+  color: var(--main-background-color);
+  animation: fadeInWhite 0.3s ease-in-out;
+}
+.mobile_headerWhite_button:hover {
+  opacity: 0.9;
+  font-family: "Atreyu";
+  background: var(--main-background-color);
+  border: solid var(--main-background-color) 1px;
+  padding: 8px 10px 5px 10px;
+
+  cursor: pointer;
+  color: black;
+}
+
+.headerWhite_spacer {
+  width: 30%;
+}
+
+.headerWhite_controls {
+  opacity: 0.9;
+  min-width: 100px;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  position: relative;
+  animation: fadeInWhite 0.3s ease-in-out;
+}
+.headerWhite_player_text {
+  font-family: "Kawingan";
+  opacity: 0.9;
+  color: var(--main-background-color);
+  white-space: nowrap;
+
+  font-size: 14px;
+  transform: translateX(0%);
+
+  animation: scroll 10s linear infinite, fadeInWhite 0.3s ease-in-out;
+}
+.headerWhite_player_text span {
+  margin: 0 10px;
+}
+.headerWhite_player_container {
+  overflow: hidden;
+  min-width: 30%;
+  /* width: 432px; */
+  width: 30%;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-80%);
+  }
+}
+
+@keyframes fadeInWhite {
+  from {
+    color: black;
+  }
+  to {
+    color: var(--main-background-color);
+  }
+}
+@keyframes fadeIn {
+  from {
+    color: var(--main-background-color);
+  }
+  to {
+    color: black;
+  }
+}
+
+/* INFORMATIONN */
+
+.information {
+  font-family: "Kawingan";
+  position: absolute;
+  top: 180px;
+  right: 0;
+  width: 190px;
+  text-align: justify;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.mobile_information {
+  display: none;
+  z-index: -10;
+}
+
+.sun {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  font-size: 26px;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* HOME */
+
+.home {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 140px;
+  width: 90%;
+}
+
+.home > ul {
+  max-width: 75%;
+  font-family: "Aqala";
+}
+
+.home h1 {
+  opacity: 0.6;
+  font-size: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.home h2 {
+  opacity: 0.3;
+  font-size: 40px;
+  margin-left: 20px;
+  padding-bottom: 2px;
+}
+
+.home a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-end;
+  height: 50px;
+  opacity: 0.3;
+  position: relative;
+  transition: ease-in-out 0.1s;
+}
+
+.home a:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: ease-in-out 0.1s;
+  padding-left: 50px;
+}
+
+.home a:hover:after {
+  content: "";
+  background-image: url("../public/img/ellipse.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  animation: appear 0.1s ease-in-out;
+  opacity: 0.9;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+/* FILMPAGE */
+.filmPage_background {
+  width: 100vw;
+}
+
+.filmPage_info {
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 25vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.filmPage_backtomenu {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  margin: 0 10%;
+  color: var(--main-background-color);
+  font-family: "Kawingan";
+  bottom: 5vh;
+  right: 38vw;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.filmPage_arrow_left {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  margin: 0 10%;
+  color: var(--main-background-color);
+  font-family: "Kawingan";
+  bottom: 5vh;
+  left: 3vw;
+  cursor: pointer;
+  opacity: 1;
+}
+.filmPage_arrow_right {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  margin: 0 10%;
+  color: var(--main-background-color);
+  font-family: "Kawingan";
+  bottom: 5vh;
+  right: 3vw;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.filmPage_text {
+  color: var(--main-background-color);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.filmPage_text h1 {
+  font-family: "Aqala";
+  font-size: 60px;
+  margin-top: 10px;
+  z-index: 0;
+  text-align: center;
+}
+
+.filmPage_text h3 {
+  font-family: "Kawingan";
+  font-size: 20px;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.filmPage_type {
+  position: fixed;
+  color: var(--main-background-color);
+  font-family: "Atreyu";
+  top: 20%;
+  right: 8%;
+  font-size: 80px;
+}
+
+.filmPage_button {
+  text-decoration: none;
+  margin-top: 50px;
+  font-size: 20px;
+  opacity: 0.9;
+  font-family: "Atreyu";
+  background: none;
+  border: solid var(--main-background-color) 1px;
+  padding: 8px 10px 5px 10px;
+  margin-left: 2%;
+  cursor: pointer;
+  color: var(--main-background-color);
+}
+
+.filmPage_button:hover {
+  opacity: 0.9;
+  font-family: "Atreyu";
+  background: var(--main-background-color);
+  border: solid var(--main-background-color) 1px;
+  padding: 8px 10px 5px 10px;
+  margin-left: 2%;
+  cursor: pointer;
+  color: black;
+}
+
+/* Music Page */
+
+.musicPage_background {
+  position: fixed;
+  width: 100vw;
+  height: 100vw;
+}
+
+.musicPage {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 150px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.musicPage h2 {
+  font-family: "Kawingan";
+  font-size: 18px;
+  opacity: 0.4;
+}
+.musicPage h1 {
+  font-family: "Aqala";
+  font-size: 50px;
+  opacity: 0.8;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.musicPage_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-family: "Kawingan";
+  font-size: 18px;
+}
+.musicPage_menu_button_selected {
+  margin: 0 10px;
+  cursor: pointer;
+  padding: 6px 6px 4px 6px;
+
+  color: #d9d9d9;
+  background-color: black;
+  opacity: 0.6;
+}
+.musicPage_menu_button {
+  margin: 0 10px;
+  cursor: pointer;
+  padding: 6px 6px 4px 6px;
+  opacity: 0.2;
+}
+
+.musicPage_info {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.musicPage_cover {
+  position: relative;
+  width: 200px;
+  height: 180px;
+  margin-right: 40px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.601);
+}
+.musicPage_info_tracks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 15%;
+}
+.musicPage_info_tracks p {
+  margin-bottom: 8px;
+  font-family: "Kawingan";
+  white-space: nowrap;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.musicPage_info_tracks p span {
+  font-family: "Kawingan";
+
+  opacity: 0.6;
+}
+
+.musicPage_button {
+  text-decoration: none;
+  opacity: 0.6;
+  font-family: "Atreyu";
+  background: none;
+  border: solid black 1px;
+  padding: 8px 10px 5px 10px;
+  cursor: pointer;
+  animation: fadeIn 0.3s ease-in-out;
+  margin-top: 30px;
+  color: black;
+}
+.musicPage_button:hover {
+  opacity: 0.6;
+  font-family: "Atreyu";
+  background: black;
+  border: solid rgba(0, 0, 0, 0.897) 1px;
+  padding: 8px 10px 5px 10px;
+
+  cursor: pointer;
+  color: var(--main-background-color);
+}
+
+.musicPage_credits {
+  text-align: center;
+  margin-top: 80px;
+  font-family: "Kawingan";
+  font-size: 14px;
+  opacity: 0.6;
+  line-height: 18px;
+}
+
+.musicPage_arrow_left {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  margin: 0 10%;
+  color: black;
+  font-family: "Kawingan";
+  bottom: 5vh;
+  left: 3vw;
+  cursor: pointer;
+  opacity: 1;
+}
+.musicPage_arrow_right {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  margin: 0 10%;
+  color: black;
+  font-family: "Kawingan";
+  bottom: 5vh;
+  right: 3vw;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.musicPage_backtomenu {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  margin: 0 10%;
+  color: black;
+  font-family: "Kawingan";
+  bottom: 5vh;
+  right: 38vw;
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .information {
+    display: none;
+  }
+
+  .header {
+    background-image: linear-gradient(to top, #d9d9d900, #d9d9d9);
+    padding-bottom: 30px;
+  }
+  .header_logo {
+    margin-left: 20px;
+  }
+  .headerWhite_logo {
+    margin-left: 20px;
+  }
+
+  .header_spacer {
+    display: none;
+  }
+  .headerWhite_spacer {
+    display: none;
+  }
+  .header_button {
+    background: fixed;
+    background-color: #d9d9d9;
+    opacity: 1;
+  }
+  .mobile_header_button {
+    background: fixed;
+    background-color: #d9d9d9;
+    opacity: 1;
+  }
+  .home {
+    margin-top: 110px;
+    padding-bottom: 100px;
+  }
+  .home h1 {
+    opacity: 1;
+    /* text-align: justify; */
+    font-size: 54px;
+    overflow: visible;
+    white-space: pre-wrap;
+    width: 68%;
+    line-height: 45px;
+  }
+  .home h2 {
+    width: 30%;
+    padding-top: 3px;
+    /* display: none; */
+    font-size: 36px;
+    margin-left: 0px;
+    text-align: end;
+  }
+  .home a {
+    white-space: wrap;
+    height: fit-content;
+
+    width: 89vw;
+    margin-bottom: 30px;
+    opacity: 1;
+    align-items: flex-start;
+  }
+  .home a:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: none;
+    padding-left: 0px;
+  }
+
+  .home a:hover:after {
+    display: none;
+  }
+  .header_player_container {
+    display: none;
+  }
+  .headerWhite_player_container {
+    display: none;
+  }
+  .header_controls {
+    display: none;
+  }
+  .headerWhite_controls {
+    display: none;
+  }
+  .mobile_header_button {
+    display: block;
+  }
+  .mobile_headerWhite_button {
+    display: block;
+  }
+  .filmPage_info {
+    width: 90vw;
+  }
+  .filmPage_backtomenu {
+    width: fit-content;
+    height: fit-content;
+    right: 32.3vw;
+    bottom: 3vh;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .filmPage_arrow_left {
+    width: fit-content;
+    height: fit-content;
+    bottom: 3vh;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .filmPage_arrow_right {
+    width: fit-content;
+    height: fit-content;
+    bottom: 3vh;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .musicPage_backtomenu {
+    width: fit-content;
+    height: fit-content;
+    opacity: 0.8;
+    right: 32.3vw;
+    bottom: 3vh;
+    padding: 10px;
+    font-size: 16px;
+    background: rgb(217, 217, 217);
+    background: -moz-radial-gradient(
+      circle,
+      rgba(217, 217, 217, 1) 0%,
+      rgba(217, 217, 217, 0) 100%
+    );
+    background: -webkit-radial-gradient(
+      circle,
+      rgba(217, 217, 217, 1) 0%,
+      rgba(217, 217, 217, 0) 100%
+    );
+    background: radial-gradient(
+      circle,
+      rgba(217, 217, 217, 1) 0%,
+      rgba(217, 217, 217, 0) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9d9d9",endColorstr="#d9d9d9",GradientType=1);
+  }
+  .musicPage_arrow_left {
+    font-size: 16px;
+    width: fit-content;
+    height: fit-content;
+    opacity: 0.8;
+    bottom: 3vh;
+    padding: 10px;
+    background: rgb(217, 217, 217);
+    background: -moz-radial-gradient(
+      circle,
+      rgba(217, 217, 217, 1) 0%,
+      rgba(217, 217, 217, 0) 100%
+    );
+    background: -webkit-radial-gradient(
+      circle,
+      rgba(217, 217, 217, 1) 0%,
+      rgba(217, 217, 217, 0) 100%
+    );
+    background: radial-gradient(
+      circle,
+      rgba(217, 217, 217, 1) 0%,
+      rgba(217, 217, 217, 0) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9d9d9",endColorstr="#d9d9d9",GradientType=1);
+  }
+  .musicPage_arrow_right {
+    font-size: 16px;
+    width: fit-content;
+    height: fit-content;
+    opacity: 0.8;
+    bottom: 3vh;
+    padding: 10px;
+    background: rgb(217, 217, 217);
+    background: -moz-radial-gradient(
+      circle,
+      rgba(217, 217, 217, 1) 0%,
+      rgba(217, 217, 217, 0) 100%
+    );
+    background: -webkit-radial-gradient(
+      circle,
+      rgba(217, 217, 217, 1) 0%,
+      rgba(217, 217, 217, 0) 100%
+    );
+    background: radial-gradient(
+      circle,
+      rgba(217, 217, 217, 1) 0%,
+      rgba(217, 217, 217, 0) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9d9d9",endColorstr="#d9d9d9",GradientType=1);
+  }
+  .musicPage {
+    margin-top: 140px;
+  }
+  .musicPage h1 {
+    width: 80%;
+    font-size: 34px;
+  }
+  .musicPage_cover {
+    width: 122px;
+    height: 110px;
+  }
+  .musicPage_info_tracks {
+    width: 30%;
+  }
+  .musicPage_info_tracks p span {
+    display: none;
+  }
+  .musicPage_info_tracks p {
+    white-space: pre-wrap;
+  }
+  .musicPage_credits {
+    width: 80%;
+    font-size: 12px;
+    margin-top: 60px;
+  }
+  .information {
+    font-family: "Kawingan";
+    position: absolute;
+    top: 180px;
+    right: 0;
+    width: 190px;
+    text-align: justify;
+    font-size: 16px;
+    opacity: 0.5;
+  }
+  .fade_footer {
+    position: fixed;
+    height: 100px;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+
+    background-image: linear-gradient(to bottom, #d9d9d900, #d9d9d9, #d9d9d9);
+  }
+  .mobile_information {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Kawingan";
+    position: fixed;
+    padding-top: 180px;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: justify;
+    font-size: 16px;
+    opacity: 1;
+    background-color: #d9d9d9;
+
+    z-index: 0;
+  }
+  .mobile_information p {
+    width: 60%;
+  }
+}
