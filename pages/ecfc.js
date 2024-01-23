@@ -15,6 +15,7 @@ export default function ECFC() {
       next="/fantasy"
       previous="/coast"
       link="https://lilanyang.studio/ecfc.html"
+      imgLink="/img/ecfc-gif.gif"
     />
   );
 }

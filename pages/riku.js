@@ -15,6 +15,7 @@ export default function Riku() {
       next="/misery"
       previous="/anotherday"
       link="https://tombrett.co/Riku-s-Valley"
+      imgLink="/img/riku.gif"
     />
   );
 }

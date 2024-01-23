@@ -24,13 +24,17 @@ export default function FilmPage({
     <>
       <style jsx global>
         {`
-          html {
+          body {
             background-color: black;
+            background-image: url(${imgLink});
+            height: 75vh;
+            background-size: cover;
+            background-position: center;
           }
         `}
       </style>
       <div className="filmPage_background">
-        <Image src={img} fill style={{ objectFit: "cover" }} />
+        {/* <Image src={img} fill style={{ objectFit: "cover" }} /> */}
         <div className="filmPage_info">
           {/* <h2 className="filmPage_type">{type}</h2> */}
           {previous === "none" ? (
