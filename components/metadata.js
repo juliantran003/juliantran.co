@@ -10,8 +10,6 @@ export default function Metadata({ title, img, description, tags, imgLink }) {
       <meta property="og:description" content={description} />
       <meta property="og:image" content={img} />
       <meta name="keywords" content={tags} />
-
-      <link rel="preload" href={preload} as="image" />
     </Head>
   );
 }

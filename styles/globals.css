@@ -6,6 +6,18 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url("../public/img/coast.gif") url("../public/img/ecfc-gif.gif")
+    url("../public/img/riku.gif") url("../public/img/logo.png")
+    url("../public/img/fu1.png") url("../public/img/fu2.png")
+    url("../public/img/fu3.png") url("../public/img/fu4.png")
+    url("../public/img/anotherday.png") url("../public/img/misery.png");
+}
 
 @font-face {
   font-family: "Aqala";

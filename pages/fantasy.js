@@ -3,7 +3,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Metadata from "../components/metadata.js";
-import Head from "next/head.js";
 
 // IMG
 import fu1 from "../public/img/fu1.png";
@@ -88,12 +87,6 @@ export default function Fantasy() {
         description={`Fantasy Unlimited : Part I - IV || Album written, performed and produced by Julian Tran`}
         tags="Julian, Tran, music, Fantasy, Unlimited, album, producer, songwriting, artist"
       />
-      <Head>
-        <link rel="preload" href="/img/fu1.png" as="image" />
-        <link rel="preload" href="/img/fu2.png" as="image" />
-        <link rel="preload" href="/img/fu3.png" as="image" />
-        <link rel="preload" href="/img/fu4.png" as="image" />
-      </Head>
 
       <div className="musicPage_background"></div>
       <div className="musicPage">
@@ -112,7 +105,7 @@ export default function Fantasy() {
           return option.send === selected ? (
             <div className="musicPage_info">
               <div className="musicPage_cover">
-                <Image src={option.img} fill quality={70} />
+                <Image src={option.img} fill quality={70} priority={true} />
               </div>
               <div className="musicPage_info_tracks">
                 {option.tracklist.map((track) => {

@@ -3,7 +3,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Metadata from "../components/metadata.js";
-import Head from "next/head.js";
 
 // IMG
 import cover from "../public/img/misery.png";
@@ -53,9 +52,7 @@ export default function Anotherday() {
         description={`Misery || Album written, performed and produced by Julian Tran`}
         tags="Julian, Tran, music, Misery, album, producer, songwriting, artist"
       />
-      <Head>
-        <link rel="preload" href="/img/misery.png" as="image" />
-      </Head>
+
       <style jsx global>
         {`
           body {
@@ -69,7 +66,7 @@ export default function Anotherday() {
 
       <div className="musicPage_info">
         <div className="musicPage_cover">
-          <Image src={cover} fill quality={70} />
+          <Image src={cover} fill quality={70} priority={true} />
         </div>
         <div className="musicPage_info_tracks">
           {tracklist.map((track) => {

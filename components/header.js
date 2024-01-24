@@ -49,9 +49,6 @@ export default function Header() {
 
   return (
     <div className="header_container">
-      <Head>
-        <link rel="preload" href="/img/logo.png" as="image" />
-      </Head>
       {router.pathname === "/" ||
       router.pathname === "/fantasy" ||
       router.pathname === "/anotherday" ||
@@ -64,7 +61,7 @@ export default function Header() {
           <Information />
           {info === true && <MobileInformation />}
           <div className="header_logo" onClick={() => logoClick()}>
-            <Image src={logo} fill alt="logo" />
+            <Image src={logo} fill alt="logo" priority={true} />
           </div>
           <div className="header_spacer"></div>
           {/* <div className="header_socials">
@@ -121,7 +118,7 @@ export default function Header() {
             INFO
           </a>
           <div className="headerWhite_logo" onClick={() => logoClick()}>
-            <Image src={logo} fill alt="logo" />
+            <Image src={logo} fill alt="logo" priority={true} />
           </div>
           <div className="headerWhite_spacer"></div>
           <div className="headerWhite_player_container">
