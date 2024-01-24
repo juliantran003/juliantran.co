@@ -27,11 +27,7 @@ module.exports = {
         },
       ],
     });
-    withDotenv({
-      publicRuntimeConfig: {
-        NEXT_PUBLIC_ROBOTS_TXT: process.env.NEXT_PUBLIC_ROBOTS_TXT,
-      },
-    });
+
     return config;
   },
 };
