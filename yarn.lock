@@ -428,6 +428,11 @@ detect-libc@^2.0.2:
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-2.0.2.tgz#8ccf2ba9315350e1241b88d0ac3b0e1fbd99605d"
   integrity sha512-UX6sGumvvqSaXgdKGUsgZWqcUyIXZ/vZTrlRT/iobiKhGL0zL4d3osHj3uqllWJK+i+sixDS/3COVEOFbupFyw==
 
+dotenv@^16.0.0:
+  version "16.4.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.0.tgz#ac21c3fcaad2e7832a1cd0c0e4e8e52225ecda0e"
+  integrity sha512-WvImr5kpN5NGNn7KaDjJnLTh5rDVLZiDf/YLA8T1ZEZEBZNEDOE+mnkS0PVjPax8ZxBP5zC5SLMB3/9VV5de9g==
+
 emojis-list@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-3.0.0.tgz#5570662046ad29e2e916e71aae260abdff4f6a78"
@@ -716,6 +721,13 @@ next-compose@^0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/next-compose/-/next-compose-0.0.2.tgz#fa26aa6430bc4e34d72fe9e5bca780aef53cf191"
   integrity sha512-ge8RvLId/wRvKRyBtJfm6oTDuknddBuqDmKSxhzTTtsK1fddtfMOYLz8BenJJG/8pBfvXVteq9JxBoCiRqFbIA==
+
+next-runtime-dotenv@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/next-runtime-dotenv/-/next-runtime-dotenv-1.5.1.tgz#c40a7c05b483c81a080270448265b410b41dbbd4"
+  integrity sha512-G1NWW06geegqev1U3E90lfYYMV+xvVIwyQv2KbQCRp03jSdUbRANcEm/QQnNoJqEGQUXoEgYDdSV6jB0yv/xAQ==
+  dependencies:
+    dotenv "^16.0.0"
 
 next@13.4.19:
   version "13.4.19"

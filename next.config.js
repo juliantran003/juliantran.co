@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-
+const withDotenv = require("next-runtime-dotenv");
 module.exports = {
   images: {
     domains: ["media.giphy.com"],
@@ -27,7 +27,11 @@ module.exports = {
         },
       ],
     });
-
+    withDotenv({
+      publicRuntimeConfig: {
+        NEXT_PUBLIC_ROBOTS_TXT: process.env.NEXT_PUBLIC_ROBOTS_TXT,
+      },
+    });
     return config;
   },
 };
