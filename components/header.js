@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import useSound from "use-sound";
 import { useEffect, useState } from "react";
 import MobileInformation from "./mobileInformation";
+import Head from "next/head";
 
 // IMG
 import logo from "../public/img/logo.png";
@@ -48,6 +49,9 @@ export default function Header() {
 
   return (
     <div className="header_container">
+      <Head>
+        <link rel="preload" href="/img/logo.png" as="image" />
+      </Head>
       {router.pathname === "/" ||
       router.pathname === "/fantasy" ||
       router.pathname === "/anotherday" ||

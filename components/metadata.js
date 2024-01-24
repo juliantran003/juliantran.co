@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function Metadata({ title, img, description, tags }) {
+export default function Metadata({ title, img, description, tags, imgLink }) {
   return (
     <Head>
       <link rel="icon" href="/favicon.ico" />
@@ -10,6 +10,8 @@ export default function Metadata({ title, img, description, tags }) {
       <meta property="og:description" content={description} />
       <meta property="og:image" content={img} />
       <meta name="keywords" content={tags} />
+
+      <link rel="preload" href={preload} as="image" />
     </Head>
   );
 }

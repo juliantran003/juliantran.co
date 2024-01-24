@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Metadata from "../components/metadata.js";
+import Head from "next/head.js";
 
 // IMG
 import cover from "../public/img/anotherday.png";
@@ -18,6 +19,9 @@ export default function Anotherday() {
         description={`Another Day || Single written, performed and produced by Julian Tran`}
         tags="Julian, Tran, music, Another, Day, album, producer, songwriting, artist"
       />
+      <Head>
+        <link rel="preload" href="/img/anotherday.png" as="image" />
+      </Head>
       <style jsx global>
         {`
           body {

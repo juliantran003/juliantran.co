@@ -29,6 +29,7 @@ export default function FilmPage({
         img={imgLink}
         description={`Score by Julian Tran - Directed by ${director}`}
         tags={tags}
+        preload={imgLink}
       />
       <style jsx global>
         {`
