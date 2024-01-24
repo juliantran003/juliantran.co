@@ -324,7 +324,7 @@ body::after {
 
 .sun {
   position: absolute;
-  bottom: -20px;
+  bottom: -70px;
   right: 0;
   font-size: 26px;
   animation: spin 4s linear infinite;
@@ -925,7 +925,13 @@ body::after {
 
     z-index: 0;
   }
-  .mobile_information p {
+  .mobile_information > p {
     width: 60%;
+    margin: 0 auto;
+  }
+  .mobile_portrait {
+    position: relative;
+    width: 50px;
+    height: 50px;
   }
 }
