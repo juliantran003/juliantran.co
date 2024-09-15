@@ -13,7 +13,7 @@ export default function Coast() {
       type="Score for Short Film"
       director="Zeyuan Ren"
       next="/ecfc"
-      previous="none"
+      previous="/chapeldrive"
       link="https://zeyuanren.com/Coast-to-Coast-Preamble"
       imgLink="img/coast.gif"
       tags="Zeyuan, Ren, Coast, shortfilm, film, score, music, soundtrack, Julian, Tran, composer, director, cinema, artist, portfolio"
