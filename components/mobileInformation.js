@@ -21,7 +21,6 @@ export default function MobileInformation() {
           <Image src={portrait} fill quality={70} priority={true} />
         </div> */}
       </p>
-      e
     </div>
   );
 }
