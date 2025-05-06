@@ -42,9 +42,9 @@ export default function Header() {
     setInfo(false);
   };
 
-  const [play, { stop }] = useSound("/audio/ecfc.mp3", {
+  const [play, { stop }] = useSound("/audio/underwater.mp3", {
     soundEnabled: true,
-    volume: 0.2,
+    volume: 0.5,
   });
 
   return (
@@ -53,6 +53,9 @@ export default function Header() {
       router.pathname === "/fantasy" ||
       router.pathname === "/anotherday" ||
       router.pathname === "/misery" ||
+      router.pathname === "/chapeldrive" ||
+      router.pathname === "/everything" ||
+      router.pathname === "/underwater" ||
       info === true ? (
         <header className="header">
           <a onClick={() => setInfo(!info)} className="mobile_header_button">
@@ -84,12 +87,9 @@ export default function Header() {
           </div> */}
           <div className="header_player_container">
             <p className="header_player_text">
-              <span>NOW playing : Score from Everything Comes Full Circle</span>
-              ✹
-              <span>NOW playing : Score from Everything Comes Full Circle</span>
-              ✹
-              <span>NOW playing : Score from Everything Comes Full Circle</span>
-              ✹
+              <span>NOW playing : Your Touch Underwater</span>✹
+              <span>NOW playing : Your Touch Underwater</span>✹
+              <span>NOW playing : Your Touch Underwater</span>✹
             </p>
           </div>
 
@@ -123,12 +123,9 @@ export default function Header() {
           <div className="headerWhite_spacer"></div>
           <div className="headerWhite_player_container">
             <p className="headerWhite_player_text">
-              <span>NOW playing : Score from Everything Comes Full Circle</span>
-              ✹
-              <span>NOW playing : Score from Everything Comes Full Circle</span>
-              ✹
-              <span>NOW playing : Score from Everything Comes Full Circle</span>
-              ✹
+              <span>NOW playing : Your Touch Underwater</span>✹
+              <span>NOW playing : Your Touch Underwater</span>✹
+              <span>NOW playing : Your Touch Underwater</span>✹
             </p>
           </div>
           {sound === true ? (

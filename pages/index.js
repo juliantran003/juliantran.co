@@ -14,6 +14,7 @@ export default function Home() {
           }
         `}
       </style>
+      <h3>From Newest to Oldest</h3>
       <ul>
         {portfolio.map((portfolio) => {
           return (

@@ -5,13 +5,16 @@ export default function Information() {
   return router.pathname === "/" ? (
     <div className="information">
       <p>
-        Julian Tran is a 24 year-old artist and composer based in London, UK.
+        My name is Julian Tran. I am a composer and sound artist based in
+        London, UK.
         <br></br>
         <br></br>
-        His work explores the relationships between songwriting, soundscapes and
-        film. <br></br>
-        <br></br> It is made using a mixture of physical and digital instruments
-        in an effort to create sonic landscapes.
+        My work explores relationships between songwriting, soundscapes and film
+        using a mixture of physical and digital instruments. <br></br>
+        <br></br> At the core of my practice lies a deep desire to communicate
+        my and others' stories through love and empathy.<br></br>
+        <br></br> Helping tell these stories and understanding what they mean to
+        myself and others gives me a sense of purpose.
       </p>
       <p className="sun">✹</p>
     </div>

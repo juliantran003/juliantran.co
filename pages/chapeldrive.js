@@ -66,13 +66,13 @@ export default function ChapelDrive() {
         Menu
       </div>
       <></>
-      {/* <div
+      <div
         className="musicPage_arrow_left"
-        onClick={() => router.push("/fantasy")}
+        onClick={() => router.push("/everything")}
       >
-        <Image src={arrowLeft} fill />
+        {/* <Image src={arrowLeft} fill /> */}
         Previous
-      </div> */}
+      </div>
     </div>
   );
 }
