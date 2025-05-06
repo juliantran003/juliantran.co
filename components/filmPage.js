@@ -35,7 +35,7 @@ export default function FilmPage({
           body {
             background-color: black;
             background-image: url(${imgLink});
-            height: 75vh;
+            height: 100vh;
             background-size: cover;
             background-position: center;
           }
