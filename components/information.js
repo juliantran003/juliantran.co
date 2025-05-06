@@ -11,10 +11,11 @@ export default function Information() {
         <br></br>
         My work explores relationships between songwriting, soundscapes and film
         using a mixture of physical and digital instruments. <br></br>
-        <br></br> At the core of my practice lies a deep desire to communicate
-        my and others' stories through love and empathy.<br></br>
-        <br></br> Helping tell these stories and understanding what they mean to
-        myself and others gives me a sense of purpose.
+        <br></br> Telling stories of love and empathy, understaning what they
+        mean and why they're important.
+        <br></br>
+        <br></br> I take immense pleasure in working with filmmakers, animators
+        and other visual creators. Please feel free to write to me .
       </p>
       <p className="sun">✹</p>
     </div>
