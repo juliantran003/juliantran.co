@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://www.juliantran.co/static/sitemap.xml
+Sitemap: https://www.juliantran.co/sitemap.xml
