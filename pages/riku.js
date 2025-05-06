@@ -14,7 +14,7 @@ export default function Riku() {
       director="Thomas Brett"
       next="/misery"
       previous="/anotherday"
-      link="https://tombrett.co/Riku-s-Valley"
+      link="https://thomas-brett.itch.io/rikusvalley"
       imgLink="/img/riku.gif"
       tags="Thomas,Brett, Riku's, Riku, Valley shortfilm, film, score, music, soundtrack, Julian, Tran, composer, director, cinema, artist, portfolio"
     />
