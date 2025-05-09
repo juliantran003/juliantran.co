@@ -15,8 +15,8 @@ export default function MobileInformation() {
         <br></br>
         <br></br>
         My work explores relationships between songwriting, soundscapes and film
-        using a mixture of physical and digital instruments. <br></br>
-        <br></br> Telling stories of love and empathy, understaning what they
+        using a blend of physical and digital instruments. <br></br>
+        <br></br> Telling stories of love and empathy, understanding what they
         mean and why they're important.
         <br></br>
         <br></br> I take immense pleasure in working with filmmakers, animators
