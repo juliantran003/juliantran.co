@@ -25,7 +25,7 @@ export default function Layout({ children }) {
         <meta property="og:image" content="/favicon.ico" />
         <meta
           name="keywords"
-          content="julian, tran, artist, composer, songwriting, music, score, film"
+          content="julian, tran, artist, composer, songwriting, music, score, film, julian tran, website, julian tran website, julian tran composer, julian tran music, sound, sound artist, songwriter, singer-songwriter, julian tran singer-songwriter, julian tran artist, portfolio, julian tran portfolio"
         />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link
