@@ -362,10 +362,17 @@ body::after {
 
 .home > ul {
   padding-right: 10px;
-  max-width: 75%;
+  max-width: 70%;
   font-family: "Aqala";
   height: 56vh;
+  padding-right: 5%;
   overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-color: rgba(0, 0, 0, 0.117) transparent;
+}
+
+.home > ul::-webkit-scrollbar-track {
+  background: red; /* color of the tracking area */
 }
 
 /* .home::after {
@@ -525,20 +532,17 @@ body::after {
   text-align: center;
 }
 
-.filmPage_text h3 {
+.filmPage_type {
   font-family: "Kawingan";
   font-size: 18px;
   opacity: 0.8;
   margin-top: 10px;
 }
-
-.filmPage_type {
-  position: fixed;
-  color: var(--main-background-color);
+.filmPage_text h3 {
   font-family: "Kawingan";
-  top: 20%;
-  right: 8%;
-  font-size: 80px;
+  font-size: 18px;
+  opacity: 0.8;
+  margin-top: 10px;
 }
 
 .filmPage_button {

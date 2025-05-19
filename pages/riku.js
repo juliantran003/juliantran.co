@@ -10,7 +10,7 @@ export default function Riku() {
       img={background}
       title="Riku's Valley"
       year="2022"
-      type="Score for Short Film"
+      type="Short Film"
       director="Thomas Brett"
       next="/misery"
       previous="/anotherday"

@@ -10,7 +10,7 @@ export default function ECFC() {
       img={background}
       title="Everything Comes Full Circle"
       year="2023"
-      type="Score for Short Film"
+      type="Short Film"
       director="Lilan Yang"
       next="/fantasy"
       previous="/coast"

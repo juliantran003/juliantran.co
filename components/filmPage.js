@@ -44,7 +44,6 @@ export default function FilmPage({
       <div className="filmPage_background">
         {/* <Image src={img} fill style={{ objectFit: "cover" }} /> */}
         <div className="filmPage_info">
-          {/* <h2 className="filmPage_type">{type}</h2> */}
           {previous === "none" ? (
             <></>
           ) : (
@@ -67,8 +66,9 @@ export default function FilmPage({
             </a>
             <h3>Score by Julian Tran</h3>
             <h3>Directed by {director}</h3>
-
+            {type && <h2 className="filmPage_type">{type}</h2>}
             <h1>{title}</h1>
+
             <h3>{year}</h3>
           </div>
           <div className="filmPage_backtomenu" onClick={() => router.push("/")}>

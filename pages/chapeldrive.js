@@ -68,7 +68,7 @@ export default function ChapelDrive() {
       <></>
       <div
         className="musicPage_arrow_left"
-        onClick={() => router.push("/everything")}
+        onClick={() => router.push("/softreset")}
       >
         {/* <Image src={arrowLeft} fill /> */}
         Previous

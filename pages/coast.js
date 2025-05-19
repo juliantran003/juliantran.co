@@ -10,7 +10,7 @@ export default function Coast() {
       img={background}
       title="Coast to Coast (Preamble)"
       year="2023"
-      type="Score for Short Film"
+      type="Short Film"
       director="Zeyuan Ren"
       next="/ecfc"
       previous="/chapeldrive"
